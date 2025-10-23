@@ -1,0 +1,15 @@
+volumes:
+  m2:
+  target:
+
+services:
+  watcher-dev:
+    user: root
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace:cached
+      - m2:/root/.m2
+      - target:/workspace/target
+    command: /bin/sh -c "while sleep 1000; do :; done"

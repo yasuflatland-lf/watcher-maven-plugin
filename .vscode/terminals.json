@@ -1,0 +1,38 @@
+{
+  "autorun": true,
+  "terminals": [
+    {
+      "icon": "rocket",
+      "name": "workspace1",
+      "description": "Open shell at project root",
+      "commands": [
+        "cd /workspace"
+      ]
+    },
+    {
+      "icon": "rocket",
+      "name": "workspace2",
+      "description": "Open shell at project root",
+      "focus": true,
+      "commands": [
+        "cd /workspace"
+      ]
+    },
+    {
+      "icon": "rocket",
+      "name": "workspace3",
+      "description": "Open shell at project root",
+      "commands": [
+        "cd /workspace"
+      ]
+    },
+    {
+      "icon": "rocket",
+      "name": "workspace4",
+      "description": "Open shell at project root",
+      "commands": [
+        "cd /workspace"
+      ]
+    }
+  ]
+}

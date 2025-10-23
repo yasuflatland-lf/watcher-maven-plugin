@@ -1,0 +1,31 @@
+{
+  "name": "Watcher Maven Plugin",
+  "dockerComposeFile": [
+    "compose.yml"
+  ],
+  "service": "watcher-dev",
+  "workspaceFolder": "/workspace",
+  "containerEnv": {
+    "MAVEN_HOME": "/usr/local/apache-maven"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.vscode-xml",
+        "eamodio.gitlens",
+        "github.vscode-pull-request-github",
+        "anthropic.claude-code",
+        "mechatroner.rainbow-csv",
+        "vscjava.vscode-maven",
+        "ms-vscode.makefile-tools",
+        "redhat.java",
+        "formulahendry.terminal",
+        "github.vscode-github-actions",
+        "fabiospampinato.vscode-terminals"
+      ]
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
+  "remoteUser": "root"
+}
